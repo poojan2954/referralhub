@@ -15,12 +15,9 @@ export default function Home() {
       {/* Content */}
       <div className="relative z-10 text-center px-4">
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-          Grow Your Business with
-          <span className="text-blue-600 block mt-2">Smart Referrals</span>
+          Welcome To 
+          <span className="text-blue-600 block mt-2">ReferralHub</span>
         </h1>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-          Automate your referral program, reward loyal customers, and watch your business grow organically.
-        </p>
         <Link href="/login">
           <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-full transition-all duration-200 shadow-lg hover:shadow-xl">
             Get Started
@@ -31,9 +28,9 @@ export default function Home() {
         {/* Stats */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
           {[
-            { number: "10K+", label: "Active Users" },
-            { number: "$2M+", label: "Rewards Given" },
-            { number: "98%", label: "Satisfaction Rate" },
+            { number: "80K+", label: "Active Users" },
+            { number: "₹50M+", label: "Rewards Given" },
+            { number: "99.98%", label: "Satisfaction Rate" },
           ].map((stat, index) => (
             <div key={index} className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
               <div className="text-3xl font-bold text-blue-600 mb-1">{stat.number}</div>

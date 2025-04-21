@@ -13,7 +13,7 @@ import { Separator } from "@/components/ui/separator";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 
-// Dummy credentials
+// Updated dummy credentials
 const DUMMY_USER = {
   email: "hushedkiller@gmail.com",
   password: "qwerty"
@@ -41,13 +41,13 @@ export default function LoginPage() {
     e.preventDefault();
     setError("");
     setIsLoading(true);
-    // Simulate network delay
     await new Promise(resolve => setTimeout(resolve, 1000));
+
     if(formData.email === DUMMY_USER.email && formData.password === DUMMY_USER.password){
       router.push("/dashboard");
     } else {
       setIsLoading(false);
-      setError("Invalid credentials. Use demo@referralhub.com / demo123");
+      setError("Invalid credentials. Use email:- hushedkiller@gmail.com and password:- qwerty");
     }
   };
 
@@ -58,7 +58,6 @@ export default function LoginPage() {
       exit={{ opacity: 0 }}
       className="h-screen bg-[#f5f8fe] grid place-items-center p-4 relative"
     >
-      {/* Dotted background pattern */}
       <div
         className="absolute inset-0 opacity-30"
         style={{
@@ -106,7 +105,7 @@ export default function LoginPage() {
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                placeholder="demo@referralhub.com"
+                placeholder="hushedkiller@gmail.com"
                 className="border-gray-300 focus:ring-blue-300"
                 required
               />
@@ -118,7 +117,7 @@ export default function LoginPage() {
                 name="password"
                 value={formData.password}
                 onChange={handleInputChange}
-                placeholder="demo123"
+                placeholder="qwerty"
                 className="border-gray-300 focus:ring-blue-300"
                 required
               />
