@@ -15,8 +15,8 @@ import Link from "next/link";
 
 // Dummy credentials
 const DUMMY_USER = {
-  email: "demo@referralhub.com",
-  password: "demo123"
+  email: "hushedkiller@gmail.com",
+  password: "qwerty"
 };
 
 export default function LoginPage() {
